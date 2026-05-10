@@ -1,16 +1,29 @@
-# React + Vite
+# Prism — creative studio with refractive glass octahedron
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Creative-studio landing page centered on a refractive glass octahedron with orbiting crystals.
 
-Currently, two official plugins are available:
+**[Live demo →](https://prism-hmrd.onrender.com)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![preview](docs/preview.gif)
 
-## React Compiler
+## What it does
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+A studio site whose hero is a refractive glass octahedron lit by a `drei` Lightformer environment, with smaller crystals orbiting it. Below the hero: project case studies, services, and a contact CTA — all on an ink-blue palette with amber and ice accents.
 
-## Expanding the ESLint configuration
+## Tech
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+React 18 · Vite · Tailwind CSS v3 · React Three Fiber · `@react-three/drei`
+
+## Highlights
+
+- Refractive `MeshTransmissionMaterial` octahedron with chromatic aberration and roughness tuned for a "real-glass" feel
+- `drei` Lightformer environment provides cheap, photo-grade studio lighting
+- Orbiting crystal instances driven by sine-curve transforms in `useFrame`
+- Ink-blue + amber + ice accent palette
+
+## Run locally
+
+```bash
+npm install
+npm run dev    # http://localhost:3540
+```
